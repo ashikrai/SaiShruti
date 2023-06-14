@@ -1,0 +1,69 @@
+<resources>
+    <!--    App Related-->
+    <string name="app_name">SaiShruti</string>
+    <string name="slogan">Samasta Loka Sukhino Bhawantu 🙏</string>
+    <string name="sai_shruti">Sai Shruti</string>
+    <string name="app_logo">App Logo</string>
+
+    <string name="disclaimer">The app is developed and maintained by Harsing Youth, please contact for any assistance.</string>
+
+    <!--   App Bar-->
+    <string name="back_arrow_button">Back Arrow Button</string>
+    <string name="menu_button">Menu Button</string>
+    <string name="favourite_button">Favourite</string>
+
+    <!--    Button Related-->
+    <string name="title_activity_create_account">CreateAccount</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="create_a_new_account">Create a New Account</string>
+    <string name="login">Login</string>
+    <string name="btn_submit">"Submit"</string>
+
+    <!--    Form Related-->
+    // Form related to login/signup
+    <string name="enter_username">Enter Username</string>
+    <string name="username_email_mobileNumber">Username / Email / Mobile No</string>
+    <string name="password">Password</string>
+    <string name="prompt_phone_number">Phone Number</string>
+    <string name="prompt_email">Email</string>
+    // Form related to contribute page
+    <string name="required_field">*</string>
+    <string name="fields_empty">Please fill all the required (*) fields.</string>
+    <string name="contribute_header">Contribute Bhajans or Devotional Songs 🎵</string>
+    <string name="contribute_subheader">Select Bhajan or Song to be added and earn point 💰. Go to Account to see your point.</string>
+    <string name="bhajan_title">Enter Bhajan Title</string>
+    <string name="bhajan_lyrics">Enter Bhajan Lyrics</string>
+    <string name="song_title">Enter Song Title</string>
+    <string name="song_lyrics">Enter Song Lyrics</string>
+    <string name="select_deity">Select Deity</string>
+    <string name="searchBhajan">🔍 Search Bhajan 🎵</string>
+    <!--    <string name="prompt_password">Password</string>-->
+
+    <!--    Intent Related-->
+    <string name="selectedDeityIntent">selectedDeity</string>
+    <string name="selectedDeityIdIntent">selectedDeityId</string>
+    <string name="openBhajanIdIntent">selectedBhajan</string>
+    <string name="openBhajanNameIntent">selectedBhajanName</string>
+    <string name="ContributeTypeIntent">ContributeType</string>
+    <string name="DeityNameIntent">DeityId</string>
+
+
+    <!--    Error Related-->
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!--    Others-->
+    <string name="prompt_or">OR</string>
+    <string name="noBhajan">Currently there are no bhajans. You can add bhajan by clicking below and earn ranks.</string>
+    <string name="noFavourite">Your favourite list is empt</string>
+    <string name="nothing">NOTHING !!</string>
+    <string name="FavouriteBhajan">Bhajan 🎵</string>
+    <string name="FavouriteSongs">Songs 🎵</string>
+    <string name="FavouriteVedam">Vedam</string>
+
+    <!--    SelectItem Related-->
+    <string name="scrollBar">ScrollBar</string>
+    <string name="scrollBar_item">ScrollBar Item</string>
+
+</resources>

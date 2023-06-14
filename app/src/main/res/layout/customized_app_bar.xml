@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AppBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/LightOrange">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="cursive"
+        android:text="@string/app_name"
+        android:textColor="@color/DarkOrange"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/AppBar_Slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/slogan"
+        android:textColor="@color/DarkOrange"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/AppBarMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/menu_button"
+        android:onClick="openPopUpMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/ic_round_menu_24"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/Fav_gif_animation"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/no_background"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/AppBarFavourite"
+        app:layout_constraintEnd_toEndOf="@+id/AppBarFavourite"
+        app:layout_constraintStart_toStartOf="@+id/AppBarFavourite"
+        app:layout_constraintTop_toTopOf="@+id/AppBarFavourite" />
+
+    <ImageView
+        android:id="@+id/AppBarFavourite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/favourite_button"
+        android:onClick="NavigateToFavouriteActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+    <ImageView
+        android:id="@+id/AppBarBackMenu"
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="2dp"
+        android:contentDescription="@string/back_arrow_button"
+        android:onClick="NavigateToPrevActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/ic_round_arrow_back_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--<ImageView-->
+<!--android:id="@+id/AppBarFavourite"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_gravity="center"-->
+<!--android:layout_weight="1"-->
+<!--android:contentDescription="@string/favourite_button"-->
+<!--android:onClick="NavigateToFavouriteActivity"-->
+<!--android:padding="7dp"-->
+<!--app:srcCompat="@drawable/ic_baseline_favorite_24"-->
+<!--tools:visibility="gone" />-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:padding="7dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/AppBarBackMenu"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:contentDescription="@string/back_arrow_button"-->
+    <!--            android:onClick="NavigateToPrevActivity"-->
+    <!--            android:padding="7dp"-->
+    <!--            app:srcCompat="@drawable/ic_round_arrow_back_24" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="269dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView2"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:fontFamily="cursive"-->
+    <!--                android:text="@string/app_name"-->
+    <!--                android:textColor="@color/DarkOrange"-->
+    <!--                android:textSize="27sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/AppBar_Slogan"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="@string/slogan"-->
+    <!--                android:textColor="@color/DarkOrange" />-->
+    <!--        </LinearLayout>-->
+
+
+    <!--        <pl.droidsonroids.gif.GifImageView-->
+    <!--            android:id="@+id/Fav_gif_animation"-->
+    <!--            android:layout_width="40dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="#00FFFFFF"-->
+    <!--            android:src="@drawable/no_background"-->
+    <!--            android:visibility="visible"-->
+    <!--            tools:src="@drawable/ic_baseline_favorite_24" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/AppBarMenu"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:contentDescription="@string/menu_button"-->
+    <!--            android:onClick="openPopUpMenu"-->
+    <!--            android:padding="7dp"-->
+    <!--            app:srcCompat="@drawable/ic_round_menu_24" />-->
+    <!--    </LinearLayout>-->
