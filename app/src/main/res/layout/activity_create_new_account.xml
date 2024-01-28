@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_login.CreateNewAccount">
+
+    <include layout="@layout/customized_app_bar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="@string/sai_shruti"
+        android:textColor="#FF5722"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <Button
+        android:id="@+id/Btn_Login"
+        android:layout_width="96dp"
+        android:layout_height="49dp"
+        android:onClick="createAccount"
+        android:text="@string/btn_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAcc_PhoneNumber"
+        app:layout_constraintVertical_bias="0.085"
+        app:rippleColor="#FF5722" />
+
+    <TextView
+        android:id="@+id/LoginStatusMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="187dp"
+        android:layout_height="175dp"
+        android:contentDescription="@string/app_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203"
+        app:srcCompat="@drawable/logo"
+        tools:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/SmallSp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="@string/disclaimer"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <EditText
+        android:id="@+id/CreateAcc_Email"
+        android:layout_width="272dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/SmallSp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.027"
+        android:autofillHints=""
+        android:importantForAutofill="no" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAcc_Email" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/prompt_or"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAcc_Email"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <EditText
+        android:id="@+id/CreateAcc_PhoneNumber"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/prompt_phone_number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAcc_Email"
+        android:autofillHints=""
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/createAcc_ErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F67E7E"
+        app:layout_constraintBottom_toBottomOf="@+id/LoginStatusMsg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_Login"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

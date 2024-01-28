@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orange_bg"
+    tools:context=".SelectProduct">
+
+    <include
+        android:id="@+id/include8"
+        layout="@layout/activity_base_navigation" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/customized_app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/scrollBar"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical"
+            android:padding="21dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:padding="7dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="14dp"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/deityDataImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="153dp"
+                        android:layout_margin="7dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/scrollBar_item"
+                        android:onClick="NavigateToBhajan"
+                        app:srcCompat="@drawable/bhajans"
+                        tools:ignore="ImageContrastCheck" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:padding="7dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="14dp"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/deityImage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="153dp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/scrollBar_item"
+                        android:onClick="NavigateToVedam"
+                        app:srcCompat="@drawable/vedam" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:visibility="visible">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:padding="7dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="14dp"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/itemSong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="153dp"
+                        android:layout_gravity="fill|center_vertical"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/scrollBar_item"
+                        android:onClick="NavigateToSongs"
+                        app:srcCompat="@drawable/songs" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/LightOrange"
+                    app:cardCornerRadius="14dp"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/itemYoutube"
+                        android:layout_width="match_parent"
+                        android:layout_height="154dp"
+                        android:layout_gravity="top"
+                        android:contentDescription="@string/scrollBar_item"
+                        android:onClick="NavigateToYoutube"
+                        app:srcCompat="@drawable/youtube" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="7dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="153dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/scrollBar_item"
+                    android:onClick="NavigateToSelectedItem"
+                    app:srcCompat="@drawable/logo" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="153dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/scrollBar_item"
+                    android:onClick="NavigateToSelectedItem"
+                    app:srcCompat="@drawable/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="7dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="153dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/scrollBar_item"
+                    android:onClick="NavigateToSelectedItem"
+                    app:srcCompat="@drawable/logo" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="153dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/scrollBar_item"
+                    android:onClick="NavigateToSelectedItem"
+                    app:srcCompat="@drawable/logo" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

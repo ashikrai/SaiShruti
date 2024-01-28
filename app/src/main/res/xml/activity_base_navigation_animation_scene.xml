@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/cardView"
+               motion:framePosition="100"
+               android:alpha="0.5" />
+           <KeyAttribute
+               motion:motionTarget="@+id/cardView"
+               motion:framePosition="100"
+               android:translationY="0dp"
+               android:alpha="1" />
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/cardView2" />
+        <OnSwipe motion:touchAnchorId="@+id/cardView" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/cardView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:translationY="50dp"
+            android:alpha="0" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/cardView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:alpha="1" />
+    </ConstraintSet>
+</MotionScene>
