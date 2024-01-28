@@ -198,7 +198,7 @@ Don't forget to give the project a star! Thanks again!
       
   Mail me - [@gmail](mailto:ashikthulungrai7@gmail.com): ashikthulungrai7@gmail.com
       
-  Project Link: [https://github.com/Ashik_Rai/Echoo](https://github.com/ReactJS-Ashik/Echoo-ReactJS-Video-Conference-Application)
+  Project Link: [https://github.com/Ashik_Rai/SaiShruti](https://github.com/ashikrai/SaiShruti)
     </td>
   </tr>
 </table>
