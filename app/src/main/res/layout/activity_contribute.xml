@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bhajans_Songs.contribute_activity.ContributeActivity">
+
+    <include
+        android:id="@+id/include5"
+        layout="@layout/customized_app_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:isScrollContainer="false"
+        android:orientation="vertical"
+        android:padding="14dp"
+        android:showDividers="middle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include5"
+        app:layout_constraintVertical_bias="0.042">
+
+        <TextView
+            android:id="@+id/contributeHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:paddingRight="7dp"
+            android:text="@string/contribute_header"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:text="@string/contribute_subheader" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BhajanBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:enabled="true"
+                android:onClick="contributeBhajan"
+                android:text="Bhajan" />
+
+            <Button
+                android:id="@+id/SongBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:onClick="contributeSong"
+                android:text="Songs" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/requiredTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/required_field"
+            android:textColor="@color/OrangeOrb"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/bhajan_song_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="4dp"
+            android:background="@android:drawable/editbox_background"
+            android:ems="10"
+            android:hint="@string/bhajan_title"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/requiredLyrics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/required_field"
+            android:textColor="@color/OrangeOrb"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/bhajan_song_lyrics"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:drawable/editbox_background"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/bhajan_lyrics"
+            android:inputType="textMultiLine"
+            android:nestedScrollingEnabled="true"
+            android:selectAllOnFocus="true"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/requiredLyrics2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/required_field"
+            android:textColor="@color/OrangeOrb"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:prompt="@string/select_deity"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/contributeRaag"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:hint="Enter Raag"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:textColor="@color/OrangeOrb"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/submit_contribution"
+            android:layout_width="163dp"
+            android:layout_height="59dp"
+            android:layout_margin="14dp"
+            android:onClick="submitContribution"
+            android:text="Submit"
+            app:icon="@drawable/ic_baseline_check_24" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

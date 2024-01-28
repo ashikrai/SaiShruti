@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Account" />
+    <item
+        android:id="@+id/clearCacheItem"
+        android:icon="@drawable/ic_baseline_cached_24"
+        android:title="Clear cache"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/refreshMenuItem"
+        android:icon="@drawable/ic_baseline_refresh_24"
+        android:title="Refresh"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/contributeMenuItem"
+        android:icon="@drawable/ic_give_gift_svgrepo_com"
+        android:title="Contribute"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logoutMenuItem"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:title="Logout"
+        app:showAsAction="never" />
+</menu>

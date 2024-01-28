@@ -1,0 +1,11 @@
+<!-- res/drawable/round_bottom_design.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" />
+    <size
+        android:width="100dp"
+        android:height="40dp" />
+    <corners android:topLeftRadius="0dp"
+        android:topRightRadius="0dp"
+        android:bottomLeftRadius="40dp"
+        android:bottomRightRadius="40dp" />
+</shape>
