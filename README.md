@@ -27,7 +27,7 @@ This is an Android App, developed mainly for listening to bhajans, devotional so
     ·
     <a href="https://github.com/ashikrai/SaiShruti/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ReactJS-Ashik/Echoo-ReactJS-Video-Conference-Application/issues">Request Feature</a>
+    <a href="https://github.com/ashikrai/SaiShruti/issues">Request Feature</a>
   </p>
 </div>
 
@@ -212,10 +212,9 @@ Don't forget to give the project a star! Thanks again!
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[ProjectName]: Echoo-ReactJS-Video-Conference-Application
 
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/ReactJS-Ashik/Echoo-ReactJS-Video-Conference-Application/issues
+[issues-url]: https://github.com/ashikrai/SaiShruti/issues
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/ashik-rai/
